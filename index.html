@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <title>Move Box</title>
+    <style>
+      #container{
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        background-color: cornflowerblue;
+      }
+      #container1{
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        background-color: crimson;
+       }
+       #container2{
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        background-color: gold;
+       }
+       #container3{
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        background-color: darkgreen;
+       }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+      	$('#container').click(function(){
+      		var pos1=Math.floor(Math.random()*1000);
+            var pos2=Math.floor(Math.random()*1000);
+            if(pos1>=1500){
+            	pos1=1500;
+          	}
+          	if(pos2>=600){
+            	pos2=600;
+          	}
+          	$("#container").animate({
+              left:pos1+"px",
+              top:pos2+"px"
+          	},2000);
+      	})
+      	$('#container1').click(function(){
+      		var pos1=Math.floor(Math.random()*1000);
+            var pos2=Math.floor(Math.random()*1000);
+            if(pos1>=1500){
+            	pos1=1500;
+          	}
+          	if(pos2>=600){
+            	pos2=600;
+          	}
+          	$("#container1").animate({
+              left:pos1+"px",
+              top:pos2+"px"
+          	},2000);
+      	})
+      	$('#container2').click(function(){
+      		var pos1=Math.floor(Math.random()*1000);
+            var pos2=Math.floor(Math.random()*1000);
+            if(pos1>=1500){
+            	pos1=1500;
+          	}
+          	if(pos2>=600){
+            	pos2=600;
+          	}
+          	$("#container2").animate({
+              left:pos1+"px",
+              top:pos2+"px"
+          	},2000);
+      	})
+      	$('#container3').click(function(){
+      		var pos1=Math.floor(Math.random()*1000);
+            var pos2=Math.floor(Math.random()*1000);
+            if(pos1>=1500){
+            	pos1=1500;
+          	}
+          	if(pos2>=600){
+            	pos2=600;
+          	}
+          	$("#container3").animate({
+              left:pos1+"px",
+              top:pos2+"px"
+          	},2000);
+      	});
+      });
+    </script>
+  </head>
+  <body>
+    <h1>MOVING THE BOX RANDOMLY WHEN ITS ISCLICKED</h1>
+    <!-- <button id="move">Move Boxes</button> -->
+    <div id="container"></div>
+    <div id="container1"></div>
+    <div id="container2"></div>
+    <div id="container3"></div>
+  </body>
+</html>
